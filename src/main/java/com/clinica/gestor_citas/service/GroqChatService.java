@@ -92,7 +92,7 @@ public class GroqChatService {
         }
 
         Map<String, Object> body = new HashMap<>();
-        body.put("model", "llama-3.3-70b-versatile"); //llama-3.3-70b-versatile más robusto | llama-3.1-8b-instant menos límites
+        body.put("model", "openai/gpt-oss-20b"); //llama-3.3-70b-versatile más robusto | llama-3.1-8b-instant menos límites
         body.put("messages", messages);
         body.put("response_format", Map.of("type", "json_object"));
 
